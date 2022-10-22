@@ -18,11 +18,9 @@
 
 // Pseudo
 
-// select elemnts from DOM
-
 // create function for generatePassword()
-    // pwd criteria
-    // prompts
+    // chartype variables
+    // pw criteria- prompts
     // conditional statement(s)
 
 // ------------------------------------------------------------------------------
@@ -32,6 +30,22 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+function generatePassword() {
+  // create chartype variables
+  var lowrCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var upprCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var specialChar = [" ", "!", "#", "$","%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@,", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
+
+var charLength = prompt ("How many characters do you want your password to be?");
+var lowrCasePrompt = confirm ("Do you want to include lowercase letters?");
+var upprCasePrompt = confirm ("Do you want to include uppercase letters?");
+var numberPrompt = confirm ("Do you want to include numbers?");
+var specialCharPrompt = confirm ("Do you want to include special characters?");
+
+
+}
 
 // Write password to the #password input
 function writePassword() {
